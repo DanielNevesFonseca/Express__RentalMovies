@@ -1,5 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
+// Aqui se cria uma classe que será traduzida em um tabela SQL
+
 @Entity("movies")
 class Movie {
   @PrimaryGeneratedColumn("increment")
@@ -16,6 +18,7 @@ class Movie {
 
   @Column({ type: "integer" })
   price: number;
+
 }
 
 export default Movie;
